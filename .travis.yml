@@ -6,7 +6,7 @@ node_js:
 cache: npm
 
 install:
-  - npm run electon:build
+  - npm run electron:build
 
 deploy:
   provider: pages
