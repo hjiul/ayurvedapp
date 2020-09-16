@@ -123,8 +123,8 @@ export default {
         this.forms=[];
         axios
           .get(
-            "http://localhost:8080/macros/s/AKfycbzKSCjGar8CYdg0riLGtveKMGMvKuEqZOqwpbrmqO9U1ZAZkKc/exec"
-            //"https://script.google.com/macros/s/AKfycbzKSCjGar8CYdg0riLGtveKMGMvKuEqZOqwpbrmqO9U1ZAZkKc/exec"
+            //"http://localhost:8080/macros/s/AKfycbzKSCjGar8CYdg0riLGtveKMGMvKuEqZOqwpbrmqO9U1ZAZkKc/exec"
+            "https://script.google.com/macros/s/AKfycbzKSCjGar8CYdg0riLGtveKMGMvKuEqZOqwpbrmqO9U1ZAZkKc/exec"
           )
           .then(response => {
             this.forms = response.data.forms;
