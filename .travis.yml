@@ -6,6 +6,9 @@ node_js:
 cache: npm
 
 install:
+  - npm ci
+
+script:
   - npm run electron:build
 
 deploy:
