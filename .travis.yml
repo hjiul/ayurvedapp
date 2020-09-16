@@ -9,9 +9,10 @@ install:
   - npm ci
 
 script:
-  - npm run electron:build
+  - npm run electron:build --publish always
 
 deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
+  local_dir: build

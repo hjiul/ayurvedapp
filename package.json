@@ -2,7 +2,7 @@
   "name": "ayurvedapp",
   "author": "esteban",
   "description": "Un programa para simplificar la vida de clara!",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
