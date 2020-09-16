@@ -1,5 +1,7 @@
 {
   "name": "ayurvedapp",
+  "author": "esteban",
+  "description": "Un programa para simplificar la vida de clara!",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,6 +13,7 @@
     "postinstall": "electron-builder install-app-deps",
     "postuninstall": "electron-builder install-app-deps"
   },
+  "repository": "https://github.com/hjiul/ayurvedapp",
   "main": "background.js",
   "dependencies": {
     "@vuejs-community/vue-filter-date-format": "^1.6.1",
