@@ -12,9 +12,13 @@ script:
   - npm run release --publish always
 
 deploy:
-  provider: pages
+  provider: releases
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
-  local_dir: build
+  local_dir: dist_electron
+  overwrite: true
+  file:
+    - "ayurvedapp-1.0.0.dmg"
+    - "ayurvedapp-1.0.0-mac.zip"
   on:
-    branch: master
+    tags: true
