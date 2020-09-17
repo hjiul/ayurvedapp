@@ -14,11 +14,9 @@ script:
 deploy:
   provider: releases
   skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  local_dir: dist_electron
+  api_key: $GITHUB_TOKEN
   overwrite: true
   file:
     - "ayurvedapp-1.0.0.dmg"
     - "ayurvedapp-1.0.0-mac.zip"
-  on:
-    tags: true
+  
