@@ -13,7 +13,7 @@ script:
 
 deploy:
   provider: releases
-  skip-cleanup: true
+  skip_cleanup: true
   api_key: $GITHUB_TOKEN
   overwrite: true
   file:
