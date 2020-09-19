@@ -4,11 +4,14 @@ import router from "./router";
 import vuetify from "./plugins/vuetify";
 import axios from "axios";
 import VueAxios from "vue-axios";
+import VueDayjs from 'vue-dayjs-plugin';
 import VueFilterDateFormat from '@vuejs-community/vue-filter-date-format';
 import VueFilterDateParse from '@vuejs-community/vue-filter-date-parse';
+import './plugins/dayjs'
 
 Vue.config.productionTip = false;
 
+Vue.use(VueDayjs);
 Vue.use(VueAxios, axios);
 Vue.use(VueFilterDateParse);
 Vue.use(VueFilterDateFormat, {

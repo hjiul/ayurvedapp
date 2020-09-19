@@ -4,6 +4,7 @@ import dashboard from '../views/dashboard.vue'
 import factura from '../views/factura.vue'
 import client from '../views/client.vue'
 import formularios from '../views/formularios.vue'
+import pacientes from '../views/pacientes.vue'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ Vue.use(VueRouter)
     path: '/formularios',
     name: 'formularios',
     component: formularios
+  },
+  {
+    path: '/pacientes',
+    name: 'pacientes',
+    component: pacientes
   }
 ]
 

@@ -53,7 +53,7 @@
             <v-divider></v-divider>
             <v-chip class="ma-2" color="#703C97" outlined dark label>Fecha de nacimiento : </v-chip><v-chip color="#703C97" dark label>{{this.selectedform[3] | dateParse('YYYY-MM-DD') | dateFormat('D-MMMM-YYYY')}}</v-chip>
             <v-divider></v-divider>
-            <v-chip class="ma-2" label>Hora de nacimiento : {{this.selectedform[4]}}</v-chip>
+            <v-chip class="ma-2" label>Hora de nacimiento : {{$date(this.selectedform[4]).format('HH:mm A')}}</v-chip>
             <v-divider></v-divider>
             <v-chip class="ma-2" color="#703C97" outlined label>Edad : {{this.selectedform[5]}} años</v-chip>
             <v-divider></v-divider>
@@ -105,6 +105,7 @@
 
 <script>
 import axios from "axios";
+//import VueDayjs from 'vue-dayjs-plugin';
 //import { Datetime } from 'vue-datetime';
 
 export default {
@@ -123,8 +124,8 @@ export default {
         this.forms=[];
         axios
           .get(
-            //"http://localhost:8080/macros/s/AKfycbzKSCjGar8CYdg0riLGtveKMGMvKuEqZOqwpbrmqO9U1ZAZkKc/exec"
-            "https://script.google.com/macros/s/AKfycbzKSCjGar8CYdg0riLGtveKMGMvKuEqZOqwpbrmqO9U1ZAZkKc/exec"
+            "http://localhost:8080/macros/s/AKfycbzKSCjGar8CYdg0riLGtveKMGMvKuEqZOqwpbrmqO9U1ZAZkKc/exec"
+            //"https://script.google.com/macros/s/AKfycbzKSCjGar8CYdg0riLGtveKMGMvKuEqZOqwpbrmqO9U1ZAZkKc/exec"
           )
           .then(response => {
             this.forms = response.data.forms;

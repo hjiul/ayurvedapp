@@ -47,6 +47,7 @@
           { title: 'Facturas', icon: 'mdi-account', route:'/factura'  },
           { title: 'Formularios', icon: 'mdi-account-group-outline', route:'/formularios'  },
           { title: 'Client', icon: 'mdi-account-group-outline', route:'/client'  },
+          { title: 'Pacientes', icon: 'mdi-mushroom', route:'/pacientes'  },
         ],
       }
     },
